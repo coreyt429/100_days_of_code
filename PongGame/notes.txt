@@ -1,0 +1,13 @@
+
+ball:
+    velocity vector
+
+paddle:
+    position
+    speed
+    size
+
+scoreboard:
+    position
+    score
+    
