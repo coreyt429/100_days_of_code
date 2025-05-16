@@ -1,6 +1,14 @@
+from os import environ
+from pathlib import Path
+from sys import base_prefix
+
 import colorgram
 from random import choice, shuffle
 import turtle as t
+
+environ["TCL_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tcl8.6")
+environ["TK_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tk8.6")
+
 t.colormode(255)
 
 # 10 x 10 pattern of 20 pixel dots

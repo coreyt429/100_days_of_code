@@ -1,8 +1,15 @@
+from os import environ
+from pathlib import Path
+from sys import base_prefix
+
 from paddle import Paddle
 from pong_screen import  PongScreen
 from time import  sleep
 from ball import Ball
 from scoreboard import Scoreboard
+
+environ["TCL_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tcl8.6")
+environ["TK_LIBRARY"] = str(Path(base_prefix) / "tcl" / "tk8.6")
 
 def quit_game():
     global game_on
