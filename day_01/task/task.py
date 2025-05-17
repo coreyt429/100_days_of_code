@@ -1,5 +1,0 @@
-print("Welcome to Band Name Generator")
-city = input("What city did you group up in?\n")
-pet = input("What is your pet's name?\n")
-print()
-print(f"Your band name could be: {city} {pet}")

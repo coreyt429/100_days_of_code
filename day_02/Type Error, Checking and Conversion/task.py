@@ -1,6 +1,0 @@
-name = input("Enter your name: ")
-length = len(name)
-print(type(length))
-length_string = str(length)
-print(type(length_string))
-print("Number of letters in your name: " + length_string)
