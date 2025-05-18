@@ -12,5 +12,7 @@ dependencies = [
     "villains",
     "pandas",
     "prettytable",
-    "pyperclip"
+    "pyperclip",
+    "requests",
+    "ipykernel"
 ]
