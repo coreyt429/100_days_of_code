@@ -14,5 +14,7 @@ dependencies = [
     "prettytable",
     "pyperclip",
     "requests",
-    "ipykernel"
+    "ipykernel",
+    "twilio",
+    "dotenv"
 ]

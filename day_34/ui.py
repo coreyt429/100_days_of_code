@@ -53,9 +53,9 @@ class QuizInterface:
         """
         Displays the next question in the quiz.
         """
+        self.widgets["canvas"].config(bg="white")
         if self.quiz.still_has_questions():
             self.quiz.next_question()
-            self.widgets["canvas"].config(bg="white")
             self.widgets["score_label"].config(text=f"Score: {self.quiz.score}")
             self.widgets["canvas"].itemconfig(
                 self.question_text, text=self.quiz.question_text
@@ -66,7 +66,6 @@ class QuizInterface:
             )
             self.widgets["true_button"].config(state="disabled")
             self.widgets["false_button"].config(state="disabled")
-            self.widgets["canvas"].config(bg="white")
             self.widgets["score_label"].config(
                 text=f"Score: {self.quiz.score}/{self.quiz.question_number}"
             )
